@@ -26,7 +26,6 @@ router.get("/random", (req, res) => {
   const employee = getRandomEmployee();
   res.send(employee);
 });
-
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 

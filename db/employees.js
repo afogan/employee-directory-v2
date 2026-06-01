@@ -17,7 +17,11 @@ export default employees;
 export function getEmployees() {
   return employees;
 }
-
+export function addEmployee(name) {
+  const employee = { id: employees.length + 1, name };
+  employees.push(employee);
+  return employee;
+}
 export function getEmployee(id) {
   return employees.find((e) => e.id === id);
 }
